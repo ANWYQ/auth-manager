@@ -3,7 +3,7 @@
     "updated": "2025-3-28T00:00:00Z",
     "authCodes": [
         {
-            "key": "AUTH-CODE-123",
+            "key": "AUTH-CODE-100",
             "created": "2025-3-28T00:00:00Z",
             "expire": "2025-3-31T00:00:00Z",
             "maxDevices": 1,
