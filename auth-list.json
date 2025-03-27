@@ -1,10 +1,1 @@
-{
-    "licenses": [
-        {
-            "key": "KCL-ANWYQ-001",
-            "deviceFp": "64100041...797a",
-            "expires": "2025-5-21",
-            "note": "ANWYQ的专属授权"
-        }
-    ]
-}
+{"licenses":[{"key":"KCL-ANWYQ-001","deviceFp":"64100041...797a","expires":"2025-5-21"}]}
