@@ -1,16 +1,4 @@
 {
-    "licenses": [
-        {
-            "key": "KCL-ANWYQ-001",
-            "deviceFp": "34abd0...f94c",
-            "expires": "2025-5-21",
-            "note": "ANWYQ的专属授权"
-        },
-        {
-            "key": "KCL-USER-002",
-            "deviceFp": null,
-            "expires": "2025-03-31",
-            "note": "可共享授权码"
-        }
-    ]
+    "kcl-ruotqvthc-m8rvcaf2": "anwy",
+    "设备哈希值2": "授权码2"
 }
