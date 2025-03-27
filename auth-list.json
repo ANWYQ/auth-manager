@@ -8,8 +8,7 @@
             "expire": "2025-3-31",
             "maxDevices": 2,
             "devices": [
-                "kcl-v6-a6c365f796408d35",
-                "kcl-v6-74487dfa51d98478"
+                "kcl-v6-a6c365f796408d35"
             ],
             "owner": "管理员",
             "notes": "测试授权"
@@ -19,9 +18,11 @@
             "created": "2025-3-28",
             "expire": "2025-3-29",
             "maxDevices": 1,
-            "devices": [],
+            "devices": [
+                "kcl-v6-74487dfa51d98478"
+            ],
             "owner": "VIP用户",
-            "notes": "年度授权"
+            "notes": "天数授权"
         }
     ]
 }
