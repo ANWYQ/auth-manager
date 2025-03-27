@@ -1,0 +1,16 @@
+{
+    "licenses": [
+        {
+            "key": "KCL-VIP-001",
+            "deviceFp": null,
+            "expires": "2024-12-31",
+            "note": "管理员专用"
+        },
+        {
+            "key": "KCL-USER-002",
+            "deviceFp": null,
+            "expires": "2024-06-30",
+            "note": "普通用户1"
+        }
+    ]
+}
