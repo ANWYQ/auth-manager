@@ -1,2 +1,2 @@
-# kcl-auth-manager
-KCL投票脚本授权管理
+# auth-manager
+脚本授权管理
