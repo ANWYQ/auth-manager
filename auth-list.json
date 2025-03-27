@@ -25,7 +25,7 @@
             "notes": "天数授权"
         },
         {
-            "key": "KCL-2025-sj",
+            "key": "sj",
             "created": "2025-3-28",
             "expire": "2025-5-1",
             "maxDevices": 2,
