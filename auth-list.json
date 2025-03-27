@@ -8,15 +8,16 @@
             "expire": "2025-3-31",
             "maxDevices": 2,
             "devices": [
-                "kcl-v6-a6c365f796408d35"
+                "kcl-v6-a6c365f796408d35",
+                "kcl-v6-74487dfa51d98478"
             ],
             "owner": "管理员",
             "notes": "测试授权"
         },
         {
-            "key": "VIP-2024",
-            "created": "2023-11-15",
-            "expire": "2024-12-31",
+            "key": "VIP-2025",
+            "created": "2025-3-28",
+            "expire": "2025-3-29",
             "maxDevices": 1,
             "devices": [],
             "owner": "VIP用户",
