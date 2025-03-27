@@ -1,26 +1,14 @@
 {
-    "version": "2.0",
-    "updated": "2025-3-28T00:00:00Z",
-    "authCodes": [
-        {
-            "key": "AUTH-CODE-123",
-            "created": "2025-3-28T00:00:00Z",
-            "expire": "2025-3-31T23:59:59Z",
-            "maxDevices": 2,
-            "devices": [
-                "kcl-v6-d3e476cbc2d105a9"
-            ],
-            "owner": "VIP用户",
-            "notes": "季度授权"
-        },
-        {
-            "key": "AUTH-CODE-456",
-            "created": "2023-11-01T00:00:00Z",
-            "expire": "2024-11-01T00:00:00Z",
-            "maxDevices": 1,
-            "devices": [],
-            "owner": "普通用户",
-            "notes": "年度授权"
-        }
-    ]
+  "version": "2.1",
+  "updated": "2025-3-28",
+  "authCodes": [
+    {
+      "key": "TEST-2023",
+      "created": "2025-3-28",
+      "expire": "2023-3-31",
+      "maxDevices": 1,
+      "devices": ["kcl-v6-d3e476cbc2d105a9"],
+      "notes": "测试"
+    }
+  ]
 }
