@@ -6,7 +6,7 @@
             "key": "AUTH-2023",
             "created": "2025-3-28",
             "expire": "2025-3-31",
-            "maxDevices": 2,
+            "maxDevices": 1,
             "devices": [
                 "kcl-v6-d3e476cbc2d105a9"
             ],
