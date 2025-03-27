@@ -1,4 +1,27 @@
 {
-    "kcl-ruotqvthc-m8rvcaf2": "anwy",
-    "设备哈希值2": "授权码2"
+    "version": "1.2",
+    "updated": "2023-11-01T00:00:00Z",
+    "authCodes": [
+        {
+            "key": "AUTH-CODE-123",
+            "created": "2025-3-28T00:00:00Z",
+            "expire": "2025-3-31T00:00:00Z",
+            "maxDevices": 2,
+            "devices": [
+                "kcl-3e6b5581-7ffy7c",
+                "device-id-2"
+            ],
+            "owner": "anwy",
+            "notes": "VIP客户"
+        },
+        {
+            "key": "AUTH-CODE-456",
+            "created": "2023-11-01T00:00:00Z",
+            "expire": "2024-05-01T00:00:00Z",
+            "maxDevices": 1,
+            "devices": [],
+            "owner": "用户2",
+            "notes": "临时授权"
+        }
+    ]
 }
