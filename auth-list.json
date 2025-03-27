@@ -6,7 +6,7 @@
             "key": "AUTH-CODE-123",
             "created": "2025-3-28T00:00:00Z",
             "expire": "2025-3-31T23:59:59Z",
-            "maxDevices": 1,
+            "maxDevices": 2,
             "devices": [
                 "kcl-v6-d3e476cbc2d105a9"
             ],
