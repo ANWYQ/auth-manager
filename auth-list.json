@@ -8,7 +8,7 @@
             "expire": "2025-3-31",
             "maxDevices": 2,
             "devices": [
-                "kcl-v8-89360743"
+                "kcl-v6-d3e476cbc2d105a9"
             ],
             "owner": "管理员",
             "notes": "测试授权"
