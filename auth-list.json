@@ -5,7 +5,7 @@
     {
       "key": "TEST-2023",
       "created": "2025-3-28",
-      "expire": "2023-3-31",
+      "expire": "2025-3-31",
       "maxDevices": 1,
       "devices": ["kcl-v6-d3e476cbc2d105a9"],
       "notes": "测试"
