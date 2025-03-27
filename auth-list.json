@@ -2,8 +2,8 @@
     "licenses": [
         {
             "key": "KCL-VIP-001",
-            "deviceFp": null,
-            "expires": "2024-12-31",
+            "deviceFp": "64100041...797a",
+            "expires": "2025-5-20",
             "note": "管理员专用"
         },
         {
