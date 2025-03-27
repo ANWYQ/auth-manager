@@ -1,16 +1,14 @@
 {
     "licenses": [
         {
-            "key": "KCL-VIP-001",
+            "key": "TEST-CODE-1",
             "deviceFp": "64100041...797a",
-            "expires": "2025-5-20",
-            "note": "管理员专用"
+            "expires": "2024-12-31"
         },
         {
-            "key": "KCL-USER-002",
+            "key": "TEST-CODE-2",
             "deviceFp": null,
-            "expires": "2024-06-30",
-            "note": "普通用户1"
+            "expires": "2024-12-31"
         }
     ]
 }
