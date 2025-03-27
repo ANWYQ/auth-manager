@@ -1,24 +1,26 @@
 {
-    "version": "1.3",
+    "version": "2.0",
     "updated": "2025-3-28T00:00:00Z",
     "authCodes": [
         {
-            "key": "AUTH-CODE-100",
+            "key": "AUTH-CODE-123",
             "created": "2025-3-28T00:00:00Z",
-            "expire": "2025-3-31T00:00:00Z",
+            "expire": "2025-3-31T23:59:59Z",
             "maxDevices": 1,
-            "devices": ["kcl-4c6ef9fa-d6f"],
-            "owner": "管理员",
-            "notes": "VIP客户"
+            "devices": [
+                "kcl-v6-d3e476cbc2d105a9"
+            ],
+            "owner": "VIP用户",
+            "notes": "季度授权"
         },
         {
             "key": "AUTH-CODE-456",
             "created": "2023-11-01T00:00:00Z",
-            "expire": "2024-05-01T00:00:00Z",
+            "expire": "2024-11-01T00:00:00Z",
             "maxDevices": 1,
             "devices": [],
-            "owner": "用户2",
-            "notes": "临时授权"
+            "owner": "普通用户",
+            "notes": "年度授权"
         }
     ]
 }
