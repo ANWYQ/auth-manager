@@ -14,10 +14,10 @@
             "notes": "测试授权"
         },
         {
-            "key": "VIP-2025",
+            "key": "KCL-2025",
             "created": "2025-3-28",
             "expire": "2025-3-29",
-            "maxDevices": 1,
+            "maxDevices": 2,
             "devices": [
                 "kcl-v6-74487dfa51d98478"
             ],
