@@ -25,14 +25,14 @@
             "notes": "天数授权"
         },
         {
-            "key": "sj",
+            "key": "KCL-2025-000",
             "created": "2025-3-28",
             "expire": "2025-5-1",
             "maxDevices": 2,
             "devices": [
-                "kcl-v6-be59670264759d2"
+                "kcl-v7-151v02bilti80"
             ],
-            "owner": "VIP手机用户",
+            "owner": "VIP用户",
             "notes": "天数授权"
         }
     ]
