@@ -64,7 +64,7 @@
             
             // 设备绑定信息
             "device": {
-                "device_ids": ["t7vnj0jevhy6fd5baiyz"],  // 绑定的设备指纹列表
+                "device_ids": [""],  // 绑定的设备指纹列表
                 "last_used": "2025-03-30T10:15:00Z",      // 最后使用时间（ISO 8601）
                 "ip_address": ""            // 可绑定特定IP（留空则不限制）
             },
