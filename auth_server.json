@@ -54,7 +54,7 @@
         {
             // 授权元数据
             "metadata": {
-                "license_key": "ENT9-ABCD-EFGH-IJKL",  // 16位授权码（必须唯一）
+                "license_key": "",  // 16位授权码（必须唯一）
                 "license_type": "premium",  // 授权类型：premium(付费版)/trial(试用)/free(免费)
                 "issued_date": "2025-03-30",  // 签发日期（YYYY-MM-DD格式）
                 "expiry_date": "2025-04-01",  // 过期日期（到期自动失效）
@@ -64,7 +64,7 @@
             
             // 设备绑定信息
             "device": {
-                "device_ids": [""],  // 绑定的设备指纹列表
+                "device_ids": ["t7vnj0jevhy6fd5baiyz"],  // 绑定的设备指纹列表
                 "last_used": "2025-03-30T10:15:00Z",      // 最后使用时间（ISO 8601）
                 "ip_address": ""            // 可绑定特定IP（留空则不限制）
             },
