@@ -1,79 +1,169 @@
 {
-    "version": "1.1",
-    "last_updated": "2025-03-30T12:00:00Z",
-    "server_message": "欢迎使用9ENTERTAIN一键退出脚本授权系统",
-    "license_validation": {
-        "require_device_id": true,
-        "allow_multiple_devices": false,
-        "max_devices_per_license": 1,
-        "default_expiry_days": 15,
-        "allow_offline_use": true,
-        "offline_grace_period_days": 7
+    // 系统配置元数据
+    "meta": {
+        "version": "1.2",  // 配置版本号（语义化版本）
+        "config_id": "9entertain_20240330",  // 配置唯一标识
+        "last_updated": "2025-03-30T14:30:00Z",  // ISO 8601格式更新时间
+        "description": "9ENTERTAIN一键退出脚本授权系统配置"
     },
+
+    // 系统全局设置
+    "system": {
+        "server_message": {
+            "welcome": "欢迎使用9ENTERTAIN一键退出脚本",
+            "alert": "请勿分享您的授权码"
+        },
+        "maintenance_mode": false,  // 全局维护开关
+        "maintenance_message": "系统维护中，请稍后再试"
+    },
+
+    // 授权验证规则（增强版）
+    "validation_rules": {
+        "device_validation": {
+            "require_device_id": true,
+            "allow_multiple_devices": false,
+            "max_devices_per_license": 1,
+            "device_change_limit": 3  // 允许更换设备的次数
+        },
+        "license_expiry": {
+            "default_expiry_days": 15,
+            "min_expiry_days": 1,    // 最短有效期
+            "max_expiry_days": 365   // 最长有效期
+        },
+        "offline_mode": {
+            "allow_offline_use": true,
+            "grace_period_days": 7,
+            "max_offline_days": 30   // 最大允许离线天数
+        },
+        "usage_limits": {
+            "daily_usage_limit": 50,  // 每日最大使用次数
+            "session_timeout": 30    // 会话超时(分钟)
+        }
+    },
+
+    // 授权许可证列表（优化结构）
     "licenses": [
         {
-            "license_key": "ENT9-ABCD-EFGH-IJKL",
-            "device_ids": ["t7vnj0jevhy6fd5baiyz"],
-            "issued_date": "2025-03-30",
-            "expiry_date": "2025-04-01",
-            "is_active": true,
-            "max_uses": 1000,
-            "current_uses": 1,
-            "holder_name": "VIP用户1",
-            "holder_email": "vip1@gamil.com",
-            "notes": "VIP授权",
+            "metadata": {
+                "license_key": "ENT9-ABCD-EFGH-IJKL",
+                "license_type": "premium",  // premium/trial/free
+                "issued_date": "2025-03-30",
+                "expiry_date": "2025-04-01",
+                "is_active": true,
+                "revocable": true  // 是否可被远程撤销
+            },
+            "device": {
+                "device_ids": ["t7vnj0jevhy6fd5baiyz"],
+                "last_used": "2025-03-30T10:15:00Z",
+                "ip_address": ""  // 可绑定IP
+            },
+            "usage": {
+                "max_uses": 1000,
+                "current_uses": 1,
+                "last_used_date": "2025-03-30"
+            },
+            "holder": {
+                "name": "VIP用户1",
+                "email": "vip1@gmail.com",
+                "contact": ""  // 联系方式扩展
+            },
             "permissions": {
-                "can_use_all_features": true,
-                "can_bypass_rate_limit": true,
-                "custom_styles": true
-            }
+                "features": {
+                    "basic_function": true,
+                    "advanced_function": true,
+                    "custom_ui": true
+                },
+                "restrictions": {
+                    "bypass_rate_limit": true,
+                    "allow_shared_use": false
+                }
+            },
+            "notes": "VIP授权"
         },
+        // 试用授权示例
         {
-            "license_key": "ENT9-MNOP-QRST-UVWX",
-            "device_ids": ["x2y9z4a7b1c3d5"],
-            "issued_date": "2025-03-01",
-            "expiry_date": "2025-06-01",
-            "is_active": true,
-            "max_uses": 100,
-            "current_uses": 15,
-            "holder_name": "试用用户1",
-            "holder_email": "trial1@example.com",
-            "notes": "季度试用授权",
+            "metadata": {
+                "license_key": "ENT9-MNOP-QRST-UVWX",
+                "license_type": "trial",
+                "issued_date": "2025-03-01",
+                "expiry_date": "2025-03-15",  // 缩短为14天试用
+                "is_active": true,
+                "revocable": true
+            },
+            "usage": {
+                "max_uses": 100,
+                "current_uses": 15,
+                "daily_limit": 10  // 试用版每日限制
+            },
             "permissions": {
-                "can_use_all_features": true,
-                "can_bypass_rate_limit": false,
-                "custom_styles": false
-            }
-        },
-        {
-            "license_key": "ENT9-REVOKED-0000-0000",
-            "device_ids": [],
-            "issued_date": "2025-01-15",
-            "expiry_date": "2026-01-15",
-            "is_active": false,
-            "revoked_date": "2025-02-20",
-            "revoke_reason": "违规使用",
-            "holder_name": "违规用户",
-            "notes": "已撤销的授权"
+                "features": {
+                    "basic_function": true,
+                    "advanced_function": false  // 试用版禁用高级功能
+                }
+            },
+            "notes": "试用授权"
         }
     ],
-    "blacklist": {
-        "device_ids": ["a1b2c3d4e5f6g7"],
-        "ip_addresses": ["192.168.1.100"],
-        "reason": "检测到滥用行为"
+
+    // 安全控制（增强版）
+    "security": {
+        "blacklist": {
+            "devices": ["a1b2c3d4e5f6g7"],
+            "ips": ["192.168.1.100"],
+            "license_keys": ["ENT9-REVOKED-0000-0000"],
+            "reason": "检测到滥用行为",
+            "auto_blacklist_after": 3  // 违规次数阈值
+        },
+        "geolock": {
+            "enabled": false,
+            "allowed_countries": ["CN", "US"]  // 国家代码白名单
+        }
     },
-    "version_control": {
-        "min_script_version": "6.0",
-        "recommended_version": "6.3",
-        "update_url": "https://github.com/yourusername/yourrepo/releases/latest"
+
+    // 版本控制与更新
+    "versioning": {
+        "compatibility": {
+            "min_script_version": "6.3",
+            "max_script_version": "7.0",
+            "recommended_version": "6.4"
+        },
+        "update": {
+            "force_update": false,
+            "download_url": "https://github.com/yourusername/yourrepo/releases/latest",
+            "changelog_url": "https://github.com/yourusername/yourrepo/blob/main/CHANGELOG.md"
+        },
+        "deprecation": {
+            "warning_days": 30,  // 版本弃用提前通知天数
+            "eol_date": ""       // 终止支持日期
+        }
     },
+
+    // 通知系统（增强版）
     "notifications": [
         {
-            "id": "notice-20250301",
-            "message": "脚本将于2025-04-01进行维护，预计2小时",
-            "type": "info",
-            "start_date": "",
-            "end_date": ""
+            "id": "notice-20240330",
+            "type": "maintenance",  // maintenance/alert/info
+            "priority": "high",     // high/medium/low
+            "title": "系统维护通知",
+            "message": "脚本将于2025-04-01 02:00-04:00进行维护升级",
+            "display": {
+                "start_date": "2025-03-30",
+                "end_date": "2025-04-02",
+                "show_countdown": true  // 显示维护倒计时
+            },
+            "actions": [
+                {
+                    "text": "查看详情",
+                    "url": "https://example.com/announcements"
+                }
+            ]
         }
-    ]
+    ],
+
+    // 数据分析配置
+    "analytics": {
+        "tracking_enabled": true,
+        "collect_metrics": ["usage_frequency", "device_info"],
+        "privacy_policy_url": "https://example.com/privacy"
+    }
 }
