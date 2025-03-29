@@ -22,7 +22,7 @@
     "licenses": [
         {
             "license_key": "ENT9-ABCD-EFGH-IJKL",  // 授权码
-            "device_ids": ["d7f3k9a2b5c1e4"],      // 绑定的设备ID列表
+            "device_ids": ["75b53f35d67896a8142b29928ec53bc4ecbfd974208150c8012aecc6eb71248a"],      // 绑定的设备ID列表
             "issued_date": "2025-01-01",           // 签发日期
             "expiry_date": "2026-01-01",           // 过期日期
             "is_active": true,                     // 是否激活
