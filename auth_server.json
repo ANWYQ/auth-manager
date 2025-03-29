@@ -1,96 +1,65 @@
 {
-    // 授权系统版本号
-    "version": "1.1",
-    
-    // 最后更新时间（ISO 8601格式）
-    "last_updated": "2025-03-30T12:00:00Z",
-    
-    // 服务器欢迎消息（显示给用户）
-    "server_message": "欢迎使用9ENTERTAIN一键退出脚本授权系统",
-    
-    // 授权验证规则配置
-    "license_validation": {
-        "require_device_id": true,          // 是否要求绑定设备ID
-        "allow_multiple_devices": false,    // 是否允许一个授权码在多设备使用
-        "max_devices_per_license": 1,      // 每个授权码允许的最大设备数
-        "default_expiry_days": 365,        // 默认授权有效期（天）
-        "allow_offline_use": true,         // 是否允许离线使用
-        "offline_grace_period_days": 7     // 离线使用的宽限期（天）
+  // 基础信息
+  "system_name": "9ENT 授权系统",
+  "version": "1.0",
+  "last_updated": "2025-03-30",
+
+  // 授权码列表 (核心配置)
+  "licenses": [
+    {
+      // 基础信息
+      "key": "VIP-8888",                  // 授权码(必须唯一)
+      "holder": "VIP用户",                // 持有人姓名
+      "expiry": "2025-04-01",            // 过期日期(YYYY-MM-DD)
+      
+      // 设备控制
+      "max_devices": 1,                   // 允许绑定的最大设备数
+      "devices": [                        // 已绑定的设备ID
+        "device123",
+        "device456"
+      ],
+
+      // 状态控制
+      "active": true,                     // 是否激活
+      "allow_offline": false,              // 是否允许离线使用
+      "offline_days": 7                   // 离线可用天数
     },
-    
-    // 授权许可证列表
-    "licenses": [
-        {
-            "license_key": "ENT9-ABCD-EFGH-IJKL",  // 授权码
-            "device_ids": ["75b53f35d67896a8142b29928ec53bc4ecbfd974208150c8012aecc6eb71248a"],      // 绑定的设备ID列表
-            "issued_date": "2025-01-01",           // 签发日期
-            "expiry_date": "2026-01-01",           // 过期日期
-            "is_active": true,                     // 是否激活
-            "max_uses": 1000,                     // 最大使用次数
-            "current_uses": 42,                   // 当前已使用次数
-            "holder_name": "VIP用户1",            // 持有人姓名
-            "holder_email": "vip1@example.com",    // 持有人邮箱
-            "notes": "年度VIP授权",                // 备注信息
-            "permissions": {                      // 权限配置
-                "can_use_all_features": true,     // 是否可使用全部功能
-                "can_bypass_rate_limit": true,    // 是否可绕过频率限制
-                "custom_styles": true             // 是否可使用自定义样式
-            }
-        },
-        // 试用用户授权示例
-        {
-            "license_key": "ENT9-MNOP-QRST-UVWX",
-            "device_ids": ["x2y9z4a7b1c3d5"],
-            "issued_date": "2025-03-01",
-            "expiry_date": "2025-06-01",         // 3个月试用期
-            "is_active": true,
-            "max_uses": 100,                     // 限制使用100次
-            "current_uses": 15,
-            "holder_name": "试用用户1",
-            "holder_email": "trial1@example.com",
-            "notes": "季度试用授权",
-            "permissions": {
-                "can_use_all_features": true,
-                "can_bypass_rate_limit": false,  // 试用版不能绕过频率限制
-                "custom_styles": false            // 试用版无自定义样式权限
-            }
-        },
-        // 已撤销的授权示例
-        {
-            "license_key": "ENT9-REVOKED-0000-0000",
-            "device_ids": [],                     // 已清空设备绑定
-            "issued_date": "2025-01-15",
-            "expiry_date": "2026-01-15",
-            "is_active": false,                   // 标记为未激活
-            "revoked_date": "2025-02-20",         // 撤销日期
-            "revoke_reason": "违规使用",          // 撤销原因
-            "holder_name": "违规用户",
-            "notes": "已撤销的授权"
-        }
-    ],
-    
-    // 黑名单系统
-    "blacklist": {
-        "device_ids": ["a1b2c3d4e5f6g7"],        // 被封禁的设备ID
-        "ip_addresses": ["192.168.1.100"],        // 被封禁的IP地址
-        "reason": "检测到滥用行为"                // 封禁原因
-    },
-    
-    // 版本控制
-    "version_control": {
-        "min_script_version": "6.0",             // 支持的最低脚本版本
-        "recommended_version": "6.2",            // 推荐版本
-        "update_url": "https://github.com/yourusername/yourrepo/releases/latest"  // 更新地址
-    },
-    
-    // 系统通知消息
-    "notifications": [
-        {
-            "id": "notice-20250301",              // 通知ID
-            "message": "系统将于2025-04-01进行维护，预计2小时",  // 通知内容
-            "type": "info",                       // 通知类型（info/warning/error）
-            "start_date": "2025-03-25",           // 开始显示日期
-            "end_date": "2025-04-02"              // 结束显示日期
-        }
-    ]
+    {
+      "key": "TRIAL-001",
+      "holder": "试用用户",
+      "expiry": "2023-12-01",
+      "max_devices": 1,
+      "devices": ["device789"],
+      "active": true,
+      "allow_offline": false
+    }
+  ],
+
+  // 黑名单 (禁止使用的设备或授权码)
+  "blacklist": {
+    "devices": ["hacked_device"],
+    "keys": ["PIRATED-KEY"]
+  },
+
+  // 系统消息 (会显示给用户)
+  "messages": [
+    {
+      "title": "系统维护通知",
+      "content": "11月25日凌晨2-4点系统升级",
+      "show_from": "2023-11-20",
+      "show_until": "2023-11-24"
+    }
+  ],
+
+  // 版本控制
+  "updates": {
+    "min_version": "6.0",                // 支持的最低脚本版本
+    "download_url": "https://example.com/update"
+  },
+
+  // 简单规则配置
+  "rules": {
+    "check_device": true,                // 是否验证设备ID
+    "allow_multi_device": false           // 是否允许多设备
+  }
 }
