@@ -118,10 +118,10 @@
             "expire": "2025-6-01",
             "maxDevices": 2,
             "devices": [
-                " kcl-v6-53d9bef8b45ec6d"
+                "kcl-v6-53d9bef8b45ec6d"
             ],
             "owner": "VIP用户",
-            "notes": "天数授权."
+            "notes": "天数授权"
         }
     ]
 }
