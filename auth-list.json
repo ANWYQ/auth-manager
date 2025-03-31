@@ -58,7 +58,7 @@
             "notes": "天数授权"
         },
         {
-            "key": "KCL-2025-05",
+            "key": "KCL-2025-04",
             "created": "2025-3-31",
             "expire": "2025-6-01",
             "maxDevices": 2,
