@@ -45,6 +45,17 @@
             ],
             "owner": "VIP用户",
             "notes": "天数授权"
+        },
+        {
+            "key": "KCL-2025-03",
+            "created": "2025-3-31",
+            "expire": "2025-6-1",
+            "maxDevices": 2,
+            "devices": [
+                "kcl-v6-f0a48ec6bad45804"
+            ],
+            "owner": "VIP用户",
+            "notes": "天数授权"
         }
     ]
 }
