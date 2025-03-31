@@ -117,9 +117,7 @@
             "created": "2025-3-31",
             "expire": "2025-6-01",
             "maxDevices": 2,
-            "devices": [
-                ""
-            ],
+            "devices": [],
             "owner": "VIP用户",
             "notes": "天数授权"
         }
