@@ -60,7 +60,7 @@
         {
             "key": "KCL-2025-04",
             "created": "2025-3-31",
-            "expire": "2025-6-1",
+            "expire": "2025-6-01",
             "maxDevices": 2,
             "devices": [
                 "kcl-v6-381b94edde348ecf"
