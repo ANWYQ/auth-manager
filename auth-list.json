@@ -113,12 +113,12 @@
             "notes": "天数授权"
         },
         {
-            "key": "KCL-2025-1111111",
+            "key": "KCL-2025-111111",
             "created": "2025-4-01",
             "expire": "2025-6-01",
             "maxDevices": 2,
             "devices": [
-                "kcl-v9-1ff8dd85"
+                " kcl-v10--61cd4b52"
             ],
             "owner": "VIP用户",
             "notes": "天数授权"
