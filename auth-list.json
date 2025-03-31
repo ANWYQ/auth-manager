@@ -117,7 +117,9 @@
             "created": "2025-3-31",
             "expire": "2025-6-01",
             "maxDevices": 2,
-            "devices": [],
+            "devices": [
+                "kcl-v6-enhanced-db4270fbbc1c0a39"
+            ],
             "owner": "VIP用户",
             "notes": "天数授权"
         }
