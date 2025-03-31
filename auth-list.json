@@ -25,12 +25,12 @@
             "notes": "天数授权"
         },
         {
-            "key": "KCL-2025-000",
-            "created": "2025-3-28",
-            "expire": "2025-5-1",
+            "key": "KCL-2025-01",
+            "created": "2025-3-31",
+            "expire": "2025-6-1",
             "maxDevices": 2,
             "devices": [
-                "kcl-v7-151v02bilti80"
+                "kcl-v6-457ee7d9a1071e5b"
             ],
             "owner": "VIP用户",
             "notes": "天数授权"
