@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         ACE KCL CP v8.6
+// @name         ACE CP v8.6
 // @namespace    http://tampermonkey.net/
 // @version      8.6
 // @description  ACE专用
