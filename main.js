@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         ACE CP v8.6
+// @name         ACE CP v9.0
 // @namespace    http://tampermonkey.net/
-// @version      8.6
+// @version      9.0
 // @description  ACE专用
 // @author       ANWY
 // @match        https://awards.komchadluek.net/KA8
